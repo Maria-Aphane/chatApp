@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar class="nav1" color="dark">
+    <ion-title>Reset Password</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="back()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="bg_content" padding>
+<ion-item class="input1">
+  <ion-input type="email" [(ngModel)]="email" placeholder="Enter your email to reset password"></ion-input>
+</ion-item>
+
+<button ion-button full color="app" (click)="resetPassword()">Reset your password</button>
+</ion-content>
+
+
+

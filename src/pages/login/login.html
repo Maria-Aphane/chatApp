@@ -1,0 +1,32 @@
+<ion-content padding class="bg_content">
+<br><br><br><br>
+
+<h1 style="text-align:center;">Chat-App <ion-icon class="icon" style="float:center;" color="app"  name="mail"></ion-icon></h1>
+
+<br><br><br><br><br><br>
+  
+
+    <ion-item class="input1">
+
+      <label stacked >Email</label>
+      <ion-input [(ngModel)]="email"  placeholder="Enter you email address" ></ion-input>
+      </ion-item>
+      <ion-item class="input1">
+          <label stacked >Password</label>
+          <ion-input [(ngModel)]="password"  placeholder="Enter your password" ></ion-input>
+      </ion-item>
+          <button ion-button full color="app" (click)="signIn()">Get Started</button>
+            
+
+
+    <button ion-button clear (click)="forgotPassword()" style="float:right;" id="button3">Forgot Password?</button>
+    <br><br><br><br><br><br><br><br><br>
+
+
+
+
+    <button ion-button clear  (click)="SignUp()"  style="float:middle;"  id="button3">Have account??Sign-UP </button>
+
+
+       
+</ion-content>

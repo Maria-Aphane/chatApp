@@ -1,0 +1,51 @@
+<ion-header>
+
+        <ion-navbar class="nav1" color="dark">
+          <ion-title>Edit Profile</ion-title>
+        </ion-navbar>
+      
+      </ion-header>
+      
+      
+      <ion-content padding class="bg_content">
+      <ion-list class="list" no-lines>
+        <ion-list-header  no-lines>
+          personal information </ion-list-header>
+          <ion-item (click)="updateNames()">
+      
+          
+          <ion-grid>
+      <ion-row>
+        <ion-col col-6>Name:</ion-col>
+        <!-- shows the firstname and lastname are from the internet with data -->
+        <ion-col col-6 *ngIf="userProfile?.firstName || userProfile?.lastName">
+          {{userProfile?.firstName}}{{userProfile?.lastName}}
+        </ion-col>
+         <!-- shows the firstname and lastname are from the internet with NO data -->
+         <ion-col col-6 *ngIf="!userProfile?.firstName || !userProfile?.lastName">
+        <span>tap here to edit</span>
+          </ion-col>
+      </ion-row>
+      
+          </ion-grid>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>date of birth</ion-label>
+            <ion-datetime displayFormat="MM D YYYY" 
+            pickerFormate="D MM YYYY" [(ngModel)]="birthDate" 
+            (ionChange)="updateDOB(birthDate)">
+      
+            </ion-datetime>
+        </ion-item>
+      
+        <ion-item (click)=" updatePassword()">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6>password</ion-col>
+              <ion-col col-6><span>tap here to edit</span></ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+      </ion-content>

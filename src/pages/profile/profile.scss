@@ -1,0 +1,52 @@
+page-profile {
+
+    .bg_content{
+
+        background-color:#b09fc7;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+    .list{
+
+        background-color: rgba(0.0,0.0,0.0,0.4);
+        margin-top: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding:20px;
+        background-size: 100% 100%;
+        border-radius:20px;
+        text-align: center;
+     
+    }
+    .nav1{
+
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+
+    .alertCustomCss{
+
+        .alert-message {
+            color:black;
+        }
+    
+        .alert-wrapper {
+            background-color:yellow;
+        }
+      }
+        .ion-list-header{
+
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .item{
+
+            color:White;
+            background-color:transparent;
+
+        }
+
+}
